@@ -1,91 +1,76 @@
-* {
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
-  padding: 0;
-}
-
-.container {
-  text-align: center;
-}
-
-.container div {
-  padding: 15px;
-  font-size: 32px;
-  font-family: Helvetica;
-  font-weight: bold;
-  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
-  background-color: #393f4d;
-}
-
-.menu ul,
-.menu li {
-  font-size: 16px;
-}
-
-.sidebar {
-  background-color: #C50208;
-}
-
-.sidebar .photo {
-  background-color: white;
-  color: black;
-  font-size: 12px;
-  font-weight: normal;
-  border-radius: 10px;
-}
-
-
-.sidebar .side-content {
-  background-color: white;
-  color: black;
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.nav {
-  background-color: #C50208;
-}
-
-.nav ul li {
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-.article {
-  background-color: #bccbde;
-}
-
-.article p {
-  font-size: 18px;
-  font-family: sans-serif;
+  height: 72px;
+  background: darkmagenta;
   color: white;
-  text-align: left;
-}
-
-.article .card {
-  background-color: #FFFFFF;
-  color: black;
-  text-align: center;
-}
-
-.card p {
-  color: black;
-  font-weight: normal;
-  font-size: 14px;
-}
-
-.card .title {
-  font-size: 18px;
-  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  align-content: center;
 }
 
 .footer {
-  background-color: #393f4d;
+  height: 72px;
+  background: #eee;
+  text-align: center;
+  align-content: center;
 }
 
-.footer p {
-  font-size: 13px;
-  font-weight: normal;
+.footertext {
+  color: darkmagenta;
+}
+
+.sidebar {
+  width: 300px;
+  background: royalblue;
+  box-sizing: border-box;
+  flex: 2 0 auto;
+}
+
+.header, 
+.sidebar {
+  padding-left: 16px;
+}
+
+.card {
+  border: 1px solid #eee;
+  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  border-radius: 4px;
+  width: 300px;
+  padding: 16px;
+  
+}
+
+.bodywrapper {
+  display: flex;
+  flex: 1;
+}
+
+.cardwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 48px;
+  gap: 32px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 16px;
 }

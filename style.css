@@ -8,11 +8,13 @@ body {
 }
 
 .header {
-  height: 72px;
+  min-height: 72px;
+  max-height: 200px;
   background: darkmagenta;
   color: white;
   font-size: 32px;
   font-weight: 900;
+  text-align: center;
   align-content: center;
 }
 
@@ -43,8 +45,16 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
   width: 300px;
-  padding: 16px;
+  height: 180px;
   
+}
+
+
+
+.bgimg img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .bodywrapper {

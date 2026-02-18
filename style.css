@@ -55,7 +55,20 @@ body {
   overflow: hidden;
 }
 
+.pfitemcard {
+  flex: auto;
+  
+  background-color: lightgrey;
+  width: 45vw;
+  overflow: hidden;
+}
 
+.pfimg {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: center center;
+}
 
 .bgimg {
   width: 100%;

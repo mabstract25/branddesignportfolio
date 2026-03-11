@@ -4,6 +4,10 @@
   --primary-font-color: #040F14;
 }
 
+* {
+  margin: 0;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
@@ -75,7 +79,7 @@ body {
   flex-wrap: wrap;
   gap: 32px;
   justify-content: center;
-  padding: 32px;
+  padding: 32px 250px;
 }
 
 .sidebar a {
@@ -98,6 +102,13 @@ li {
 }
 
 /* Portfolio Page Styles */
+
+/* 
+pfitemcard half > 50% split
+pfitemcard third > 33% split
+pfitemcard twothird > 66% split
+pfitemcard fullsize > 100% cover
+*/
 
 .pfitemcard {
   flex: auto;
@@ -141,4 +152,26 @@ li {
   aspect-ratio: 3 / 2;
   object-fit: cover;
   object-position: center center;
+  height: 100%;
+}
+
+.cardCopy {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 15px;
+  justify-content: space-evenly;
+}
+
+.cardTitle {
+  line-height: 1.4;
+}
+
+.cardSubtitle {
+  line-height: 1.2;
+}
+
+.cardText {
+  line-height: 1.0;
 }

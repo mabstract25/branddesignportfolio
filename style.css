@@ -36,6 +36,12 @@ p {
   font-weight: var(--paraWeight);
 }
 
+ul, li {
+  font-family: var(--fontName);
+  font-weight: var(--paraWeight);
+  line-height: 1.2;
+}
+
 .header {
   min-height: 72px;
   max-height: 200px;

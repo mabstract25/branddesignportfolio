@@ -1,8 +1,10 @@
 :root {
-  --primary-bg-color: #2babe3;
-  --secondary-bg-color: #edf8fd;
-  --primary-font-color: #040F14;
+  --primary-bg-color: #273469;
+  --secondary-bg-color: #fafaff;
+  --primary-font-color: #30343f;
+  --secondary-font-color: #fafaff;
   --fontName: "Montserrat", sans-serif;
+  --titleWeight: 800;
   --headerWeight: 600;
   --subHeaderWeight: 500;
   --paraWeight: 350;
@@ -21,6 +23,11 @@ body {
   justify-content: space-between;
 }
 
+h1 {
+  font-family: var(--fontName);
+  font-weight: var(--titleWeight);
+}
+
 h2 {
   font-family: var(--fontName);
   font-weight: var(--headerWeight);
@@ -34,6 +41,7 @@ h3 {
 p {
   font-family: var(--fontName);
   font-weight: var(--paraWeight);
+  color: var(--primary-font-color);
 }
 
 ul, li {
@@ -46,7 +54,7 @@ ul, li {
   min-height: 72px;
   max-height: 200px;
   background: var(--primary-bg-color);
-  color: var(--primary-font-color);
+  color: var(--secondary-font-color);
   font-size: 32px;
   font-weight: 900;
   text-align: center;
@@ -138,7 +146,7 @@ pfitemcard fullsize > 100% cover
 
 .pfitemcard {
   
-  background-color: lightgrey;
+  
   overflow: hidden;
   line-height: 0;
   
@@ -176,7 +184,7 @@ pfitemcard fullsize > 100% cover
 
 .pfimg {
   width: 100%;
-  aspect-ratio: 3 / 2;
+  /* aspect-ratio: 3 / 2; */
   object-fit: cover;
   object-position: center center;
   min-height: 100%;

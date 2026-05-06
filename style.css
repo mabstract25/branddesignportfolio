@@ -187,6 +187,10 @@ pfitemcard fullsize > 100% cover
   /* aspect-ratio: 3 / 2; */
   object-fit: cover;
   object-position: center center;
+  
+}
+
+.headerimg {
   min-height: 100%;
 }
 

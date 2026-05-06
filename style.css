@@ -1,5 +1,5 @@
 :root {
-  --primary-bg-color: #273469;
+  --primary-bg-color: #1e2749;
   --secondary-bg-color: #fafaff;
   --primary-font-color: #30343f;
   --secondary-font-color: #fafaff;
@@ -188,6 +188,16 @@ pfitemcard fullsize > 100% cover
   object-fit: cover;
   object-position: center center;
   min-height: 100%;
+}
+
+.imgbgdark {
+  background-color: var(--primary-bg-color);
+  border-radius: 1rem;
+}
+
+.imgbglight {
+  background-color: var(--secondary-bg-color);
+  border-radius: 1rem;
 }
 
 .cardCopy {

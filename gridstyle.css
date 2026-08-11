@@ -3,11 +3,21 @@
   --secondary-bg-color: #fafaff;
   --primary-font-color: #30343f;
   --secondary-font-color: #fafaff;
-  --fontName: "Montserrat", sans-serif;
+  --fontRegular: "Jost-Regular", sans-serif;
   --titleWeight: 800;
   --headerWeight: 600;
   --subHeaderWeight: 500;
   --paraWeight: 350;
+}
+
+@font-face {
+  font-family: Jost-Regular;
+  src: url(Fonts/Jost-Regular.ttf);
+}
+
+@font-face {
+  font-family: Jost-Bold;
+  src: url(Fonts/Jost-Bold.ttf);
 }
 
 * {
@@ -19,6 +29,7 @@
 .pageContainer{
   display: flex;
   height: 100vh;
+  overflow:scroll
 }
 
 .pageGrid {
@@ -26,6 +37,7 @@
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr;
   width: 100%;
+  height: 100%
 }
 
 /* Nav Card Styles */
@@ -33,11 +45,13 @@
   background-color: papayawhip;
   grid-area: 1/1/2/1;
   min-width: 250px;
+  
 }
 
 .navCard,
 .sideBar {
   padding: 1em;
+  font-family: var(--fontRegular);
 }
 
 .linkContainer li {
@@ -61,6 +75,7 @@
 /* Right Column Styles */
 .rightColumn {
   grid-area: 1/2/2/3;
+  max-height: 100vh;
 }
 
 .contentGrid {
@@ -68,11 +83,19 @@
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-template-rows: repeat(3);
   gap: 1em;
-  overflow: scroll;
+  /* overflow: scroll; */
   height: 100%;
+  padding: 1em;
 }
 
 .content {
   background-color: lightgrey;
   min-height: 250px;
+}
+
+.contentImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }

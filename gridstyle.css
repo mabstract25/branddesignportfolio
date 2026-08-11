@@ -1,0 +1,78 @@
+:root {
+  --primary-bg-color: #1e2749;
+  --secondary-bg-color: #fafaff;
+  --primary-font-color: #30343f;
+  --secondary-font-color: #fafaff;
+  --fontName: "Montserrat", sans-serif;
+  --titleWeight: 800;
+  --headerWeight: 600;
+  --subHeaderWeight: 500;
+  --paraWeight: 350;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pageContainer{
+  display: flex;
+  height: 100vh;
+}
+
+.pageGrid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+}
+
+/* Nav Card Styles */
+.navCard {
+  background-color: papayawhip;
+  grid-area: 1/1/2/1;
+  min-width: 250px;
+}
+
+.navCard,
+.sideBar {
+  padding: 1em;
+}
+
+.linkContainer li {
+  list-style-type: none;
+}
+
+/* Sidebar Styles */
+
+.sideBar {
+  background-color: #ffffff;
+}
+
+/* Left Column Styles */
+.leftColumn {
+  grid-area: 1/1/2/1;
+  grid-template-rows: 200px 1fr;
+  display: grid;
+  gap: 1em;
+}
+
+/* Right Column Styles */
+.rightColumn {
+  grid-area: 1/2/2/3;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: repeat(3);
+  gap: 1em;
+  overflow: scroll;
+  height: 100%;
+}
+
+.content {
+  background-color: lightgrey;
+  min-height: 250px;
+}
